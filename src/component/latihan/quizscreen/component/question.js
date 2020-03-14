@@ -34,7 +34,6 @@ export default class Question extends React.Component {
                 this.setState({
                     isModalVisible: true
                 });
-
             }
         }
     }
@@ -104,7 +103,7 @@ export default class Question extends React.Component {
             <View style={{ flex: 1 }}>
                 <View style={{ padding: 12 }}>
                     <View style={{ width: '100%', height: 50, marginTop: 10 }}>
-                        <Text style={{ fontSize: 25, color: '#3aa2fc', fontFamily: 'PoppinsSemiBold', textAlign: 'center', marginTop: 5 }}>Pertanyaan {this.props.current + 1} dari 10</Text>
+                        <Text style={{ fontSize: 25, color: '#3aa2fc', fontFamily: 'PoppinsSemiBold', textAlign: 'center', marginTop: 5 }}>Pertanyaan {this.props.current + 1} dari {this.props.end}</Text>
                     </View>
                     <Text style={{ fontSize: 20, fontWeight: "bold", color: "#3a3a3a", marginVertical: '8%' }}>
                         {this.props.question.question}
@@ -145,7 +144,6 @@ export default class Question extends React.Component {
                     </Modal>
                 </View>
             </View>
-            // </ImageBackground>
         );
     }
 }

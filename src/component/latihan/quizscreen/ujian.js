@@ -6,27 +6,28 @@ import {
   StyleSheet,
   Picker,
   AsyncStorage
- 
+
 } from 'react-native';
- 
+
 import Question from './component/question'
 import Button from 'react-native-button';
 // import AsyncStorage from '@react-native-community/async-storage';
- 
+
 export default class Ujian extends React.Component {
-     
+
   goToHome = () => this.props.navigation.navigate('Latihan');
- 
+
   constructor(props) {
     super(props);
     this.state = {
       loading: false,
       questions: [],
-      Nilai:'',
+      Nilai: '',
       current: 0,
+      end: 15,
       correctScore: 5,
-      totalScore: 50,
- 
+      totalScore: 75,
+
       results: {
         score: 0,
         correctAnswers: 0
@@ -34,23 +35,23 @@ export default class Ujian extends React.Component {
       completed: false
     };
   }
- 
+
   fetchQuestions = async () => {
     await this.setState({ loading: true });
     const response = await fetch(
       'http://ec2-3-86-96-130.compute-1.amazonaws.com/api/exam2'
     );
     const questions = await response.json();
- 
-    const  results  = questions;
- 
+
+    const results = questions;
+
     results.forEach(item => {
       item.id = Math.floor(Math.random() * 10000);
     });
- 
+
     await this.setState({ questions: results, loading: false });
   };
- 
+
   reset = () => {
     this.setState(
       {
@@ -67,36 +68,36 @@ export default class Ujian extends React.Component {
       }
     );
   };
- 
+
   _Home = () => {
     this.props.navigation.goBack()
   };
- 
+
   submitAnswer = (index, answer) => {
     const question = this.state.questions[index];
     const isCorrect = question.correct_answer === answer;
     const results = { ...this.state.results };
- 
+
     results.score = isCorrect ? results.score + 10 : results.score;
     results.correctAnswers = isCorrect
       ? results.correctAnswers + 1
       : results.correctAnswers;
-       
-     
- 
+
+
+
     this.setState({
       current: index + 1,
       results,
-      completed: index === 9 ? true : false
+      completed: index === 14 ? true : false
     });
   };
- 
+
   componentDidMount() {
     this.fetchQuestions();
   }
- 
+
   render() {
-   
+
     return (
       <View style={styles.container}>
         {!!this.state.loading && (
@@ -115,19 +116,22 @@ export default class Ujian extends React.Component {
               question={this.state.questions[this.state.current]}
               correctPosition={Math.floor(Math.random() * 3)}
               current={this.state.current}
+              end={this.state.end}
             />
           )}
- 
+
         <View
           style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}
         >
           {this.state.completed === true && (
-            <View style={{ alignItems: 'center', justifyContent: 'center' }}>
+          <View style={{ alignItems: 'center', justifyContent: 'center' }}>
             <Text style={{ fontSize: 25, fontFamily: 'PoppinsSemiBold' }}>Quiz Selesai</Text>
             <Text style={{ fontFamily: 'PoppinsReg', fontSize: 18 }}>Nilaimu</Text>
-            <Text style={{ fontSize: 64, fontFamily: 'PoppinsSemiBold' }}>{this.state.results.score}</Text>
+            <View style={{ width: 150, height: 90, alignItems: 'center', paddingLeft: 2, alignSelf: 'center' }}>
+              <Text style={{ fontSize: 64, fontFamily: 'PoppinsSemiBold', flexShrink: 1, flexWrap: 'wrap' }}>{this.state.results.score / 3 * 2}</Text>
+            </View>
             <Text style={{ fontFamily: 'PoppinsReg', fontSize: 16 }}>Jawaban benar : {this.state.results.correctAnswers}</Text>
-            <Text style={{ fontFamily: 'PoppinsReg', fontSize: 16, marginTop: 5 }}>Jawaban salah : {10 - this.state.results.correctAnswers}</Text>
+            <Text style={{ fontFamily: 'PoppinsReg', fontSize: 16, marginTop: 5 }}>Jawaban salah : {15 - this.state.results.correctAnswers}</Text>
             <Button
               containerStyle={styles.loginContainer}
               style={styles.loginText}
@@ -142,13 +146,13 @@ export default class Ujian extends React.Component {
               <Text style={{ color: '#fff', fontFamily: 'PoppinsSemiBold', fontSize: 16, textAlign: 'center' }}>Keluar</Text>
             </Button>
           </View>
-          )}
+        )}
         </View>
       </View>
     );
   }
 }
- 
+
 const styles = StyleSheet.create({
   container: {
     display: 'flex',
@@ -181,6 +185,6 @@ const styles = StyleSheet.create({
   },
   loginText: {
     color: '#fff',
-    fontFamily:'PoppinsReg'
+    fontFamily: 'PoppinsReg'
   },
 });

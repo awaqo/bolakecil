@@ -19,13 +19,12 @@ import MenuLatihan from '../latihan/menuLatihanScreen';
 
 import Quiz from '../latihan/quizscreen/quiz';
 import Ujian from '../latihan/quizscreen/ujian';
-import Question from '../latihan/quizscreen/component/question';
 
 // screen profil
 import MenuProfil from '../profil/profilScreen';
 
 const Splashscreen = createStackNavigator({
-    Splash: { screen: Splash, navigationOptions: { headerShown: false }}
+    Ujian: { screen: Ujian, navigationOptions: { headerShown: false }}
 })
 
 const MateriStack = createStackNavigator({
@@ -53,7 +52,6 @@ const LatihanStack = createStackNavigator({
 
     Quiz: { screen: Quiz, navigationOptions: { headerShown: false } },
     Ujian: { screen: Ujian, navigationOptions: { headerShown: false } },
-    Question: { screen: Question, navigationOptions: { headerShown: false } },
 });
 
 LatihanStack.navigationOptions = ({ navigation }) => {

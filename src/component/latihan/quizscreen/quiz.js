@@ -24,6 +24,7 @@ export default class Quiz extends React.Component {
       questions: [],
       Nilai: '',
       current: 0,
+      end: 10,
       correctScore: 5,
       totalScore: 50,
 
@@ -115,6 +116,7 @@ export default class Quiz extends React.Component {
               question={this.state.questions[this.state.current]}
               correctPosition={Math.floor(Math.random() * 3)}
               current={this.state.current}
+              end={this.state.end}
             />
           )}
 
