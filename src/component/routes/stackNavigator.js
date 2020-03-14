@@ -16,17 +16,10 @@ import MateriTenisMeja from '../materi/tenismeja';
 
 // screen laihan
 import MenuLatihan from '../latihan/menuLatihanScreen';
-// screen exam
-import Exam from '../latihan/exam/exam';
-import Result from '../latihan/exam/result';
-
-// screen quiz
-import Quizsoftball from '../latihan/quizz/softball/quizsoftball';
-// result quiz
-import Playquizsoftball from '../latihan/scorequiz/scoresoftball';
 
 import Quiz from '../latihan/quizscreen/quiz';
-import Ujian from '../latihan/ujian';
+import Ujian from '../latihan/quizscreen/ujian';
+import Question from '../latihan/quizscreen/component/question';
 
 // screen profil
 import MenuProfil from '../profil/profilScreen';
@@ -57,21 +50,10 @@ MateriStack.navigationOptions = ({ navigation }) => {
 
 const LatihanStack = createStackNavigator({
     LatihanScreen: { screen: MenuLatihan, navigationOptions: { headerShown: false } }, //menu latihan
-    // screen Exam
-    Result: { screen: Result, navigationOptions: { headerShown: false }},
-    Exam: { screen: Exam, navigationOptions: { headerShown: false }},
-
-    //screen Quiz softball
-    Playquizsoftball: { screen: Playquizsoftball, navigationOptions: { headerShown: false } },
-    Quizsoftball: { screen: Quizsoftball, navigationOptions: { headerShown: false } },
 
     Quiz: { screen: Quiz, navigationOptions: { headerShown: false } },
     Ujian: { screen: Ujian, navigationOptions: { headerShown: false } },
-
-    //screen Quiz tenis meja
-    //screen Quiz tenis lapangan
-    //screen Quiz kasti
-    //screen Quiz bulutangkis
+    Question: { screen: Question, navigationOptions: { headerShown: false } },
 });
 
 LatihanStack.navigationOptions = ({ navigation }) => {

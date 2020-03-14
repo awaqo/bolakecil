@@ -33,7 +33,7 @@ class ProfileScreen extends React.Component {
 
     render() {
         return (
-            <View style={{ backgroundColor: '#fff', flex: 1, width: '100%' }}>
+            <View style={{ backgroundColor: '#fff', flex: 1, width: '100%', justifyContent: 'center' }}>
                 {/* modal start */}
                 <Modal
                     animationType='slide'
@@ -169,7 +169,7 @@ const styles = StyleSheet.create({
         fontSize: 20,
         color: '#3a3a3a',
         marginLeft: 20,
-        marginTop: 2
+        marginTop: 5
     },
     bola: {
         width: 80,

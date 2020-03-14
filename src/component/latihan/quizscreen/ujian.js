@@ -9,7 +9,7 @@ import {
  
 } from 'react-native';
  
-import Question from './quizscreen/component/question'
+import Question from './component/question'
 import Button from 'react-native-button';
 // import AsyncStorage from '@react-native-community/async-storage';
  
@@ -101,8 +101,8 @@ export default class Ujian extends React.Component {
       <View style={styles.container}>
         {!!this.state.loading && (
           <View style={styles.loadingQuestions}>
-            <ActivityIndicator size="large" color="#00ff00" />
-            <Text>Please wait while we are loading questions for you</Text>
+            <ActivityIndicator size="large" color="#3aa2fc" />
+            <Text>Sabar, kamu pasti sukses !</Text>
           </View>
         )}
  
@@ -122,29 +122,26 @@ export default class Ujian extends React.Component {
           style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}
         >
           {this.state.completed === true && (
-            <View style={{ alignItems: 'center' }}>
-              <Text style={{ fontSize: 25 }}>Quiz Completed</Text>
-              <Text>Correct Answers: {this.state.results.correctAnswers}</Text>
-              <Text>
-                Incorrect Answers: {10 - this.state.results.correctAnswers}
-              </Text>
-              <Text>Total Score: {100}</Text>
-              <Text>Obtained Score: {this.state.results.score}</Text>
-              <Button
-                   containerStyle={styles.loginContainer}
-                   style={styles.loginText}
-                   onPress={this.reset}
-                 >
-                   <Text style={{color:'#fff',fontFamily:'PoppinsReg',fontSize:15,textAlign:'center'}}>Restart Quiz</Text>
-                 </Button>
-              <Button
-                   containerStyle={styles.loginContainer}
-             
-                   onPress={this._Home}
-                 >
-                   <Text style={{color:'#fff',fontFamily:'PoppinsReg',fontSize:15,textAlign:'center'}}>Exit Quiz</Text>
-                 </Button>
-            </View>
+            <View style={{ alignItems: 'center', justifyContent: 'center' }}>
+            <Text style={{ fontSize: 25, fontFamily: 'PoppinsSemiBold' }}>Quiz Selesai</Text>
+            <Text style={{ fontFamily: 'PoppinsReg', fontSize: 18 }}>Nilaimu</Text>
+            <Text style={{ fontSize: 64, fontFamily: 'PoppinsSemiBold' }}>{this.state.results.score}</Text>
+            <Text style={{ fontFamily: 'PoppinsReg', fontSize: 16 }}>Jawaban benar : {this.state.results.correctAnswers}</Text>
+            <Text style={{ fontFamily: 'PoppinsReg', fontSize: 16, marginTop: 5 }}>Jawaban salah : {10 - this.state.results.correctAnswers}</Text>
+            <Button
+              containerStyle={styles.loginContainer}
+              style={styles.loginText}
+              onPress={this.reset}
+            >
+              <Text style={{ color: '#fff', fontFamily: 'PoppinsSemiBold', fontSize: 16, textAlign: 'center' }}>Ulangi</Text>
+            </Button>
+            <Button
+              containerStyle={styles.exit}
+              onPress={this._Home}
+            >
+              <Text style={{ color: '#fff', fontFamily: 'PoppinsSemiBold', fontSize: 16, textAlign: 'center' }}>Keluar</Text>
+            </Button>
+          </View>
           )}
         </View>
       </View>
@@ -158,13 +155,24 @@ const styles = StyleSheet.create({
     height: '100%'
   },
   loginContainer: {
- 
     backgroundColor: '#3aa2fc',
-    alignSelf:'center',
-    borderRadius:25,
-    paddingVertical:20,
-    width:200,
-    marginTop: 30
+    alignSelf: 'center',
+    borderRadius: 10,
+    width: 200,
+    height: 55,
+    marginTop: 40,
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+  exit: {
+    backgroundColor: '#EB5757',
+    alignSelf: 'center',
+    borderRadius: 10,
+    width: 200,
+    height: 55,
+    marginTop: 20,
+    alignItems: 'center',
+    justifyContent: 'center'
   },
   loadingQuestions: {
     flex: 1,

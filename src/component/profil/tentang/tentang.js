@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { ScrollView, View, Text, StyleSheet, TouchableOpacity, Image, Modal, Dimensions, Linking } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
+import Icon2 from 'react-native-vector-icons/FontAwesome5'
 
 import adit from '../img/adit.jpeg'
 import afrizal from '../img/frizal.jpeg'
@@ -23,10 +24,6 @@ export default class Tentang extends React.Component {
         }
     }
 
-    _bola = () => {
-        this.setState({ bola: !this.state.bola });
-    }
-
     _adit = () => {
         this.setState({ adit: !this.state.adit });
     }
@@ -46,25 +43,8 @@ export default class Tentang extends React.Component {
     render() {
         return (
             <ScrollView style={styles.container}>
-                <Modal
-                    animationType='slide'
-                    transparent
-                    visible={this.state.bola}
-                    onRequestClose={() => { this.setState({ bola: !this.state.bola }); }}>
-                    <View style={{ flex: 1, backgroundColor: 'rgba(0, 0, 0, 0.6)', justifyContent: 'center' }}>
-                        <View style={{ width: '90%', height: 420, backgroundColor: '#FFF', alignSelf: 'center', paddingVertical: 20 }}>
-                            <View>
-                                <TouchableOpacity style={{ paddingHorizontal: 20, flexDirection: 'row', alignItems: 'center', marginBottom: 10 }} onPress={this._bola}>
-                                    <Icon color={'#EB5757'} size={40} name="ios-arrow-round-back" />
-                                    <Text style={{ marginLeft: 10, fontFamily: 'PoppinsSemiBold', fontSize: 16 }}>Tentang Aplikasi Bola Kecil</Text>
-                                </TouchableOpacity>
-                            </View>
-
-                        </View>
-                    </View>
-                </Modal>
-
                 {/* profil member */}
+                {/* adit */}
                 <Modal
                     animationType='slide'
                     transparent
@@ -73,18 +53,188 @@ export default class Tentang extends React.Component {
                     <View style={{ flex: 1, backgroundColor: 'rgba(0, 0, 0, 0.6)', justifyContent: 'center' }}>
                         <View style={{ width: '90%', height: 420, backgroundColor: '#FFF', alignSelf: 'center', paddingVertical: 20 }}>
                             <View>
-                                <TouchableOpacity style={{ paddingHorizontal: 20, flexDirection: 'row', alignItems: 'center', marginBottom: 10 }} onPress={this._bola}>
+                                <TouchableOpacity style={{ paddingHorizontal: 20, flexDirection: 'row', alignItems: 'center', marginBottom: 10 }} onPress={this._adit}>
                                     <Icon color={'#EB5757'} size={40} name="ios-arrow-round-back" />
-                                    <Text style={{ marginLeft: 10, fontFamily: 'PoppinsSemiBold', fontSize: 16 }}>Tentang Aplikasi Bola Kecil</Text>
+                                    <Text style={{ fontFamily: 'PoppinsSemiBold', color: '#3a3a3a', fontSize: 18, marginLeft: 10, marginTop: 5 }}>Kontak</Text>
                                 </TouchableOpacity>
                             </View>
-                            <View style={styles.textbola}>
-                                <Text style={{ fontFamily: 'PoppinsReg' }}>Bola Kecil adalah aplikasi e-book yang berisi tentang materi-materi olahraga seputar bola kecil.</Text>
+                            <View style={styles.contact}>
+                                <Icon name="logo-instagram" size={30} />
+                                <Text onPress={() => Linking.openURL('https://www.instagram.com/aditya_nur28/')} style={{ fontFamily: 'PoppinsReg', marginLeft: 10 }}>Instagram</Text>
+                            </View>
+                            <View style={styles.contact}>
+                                <Icon name="logo-github" size={30} />
+                                <Text onPress={() => Linking.openURL('https://github.com/adityaanh')} style={{ fontFamily: 'PoppinsReg', marginLeft: 10 }}>Github</Text>
+                            </View>
+                            <View style={styles.contact}>
+                                <Icon2 name="behance" size={25} />
+                                <Text onPress={() => Linking.openURL('https://www.behance.net/adityanh02f035')} style={{ fontFamily: 'PoppinsReg', marginLeft: 10 }}>Behance</Text>
+                            </View>
+                            <View style={styles.contact}>
+                                <Icon name="ios-mail" size={30} />
+                                <Text style={{ fontFamily: 'PoppinsReg', marginLeft: 10 }}>aditya.n.h02@gmail.com</Text>
+                            </View>
+                        </View>
+                    </View>
+                </Modal>
+                {/* afrizal */}
+                <Modal
+                    animationType='slide'
+                    transparent
+                    visible={this.state.afrizal}
+                    onRequestClose={() => { this.setState({ afrizal: !this.state.afrizal }); }}>
+                    <View style={{ flex: 1, backgroundColor: 'rgba(0, 0, 0, 0.6)', justifyContent: 'center' }}>
+                        <View style={{ width: '90%', height: 420, backgroundColor: '#FFF', alignSelf: 'center', paddingVertical: 20 }}>
+                            <View>
+                                <TouchableOpacity style={{ paddingHorizontal: 20, flexDirection: 'row', alignItems: 'center', marginBottom: 10 }} onPress={this._afrizal}>
+                                    <Icon color={'#EB5757'} size={40} name="ios-arrow-round-back" />
+                                    <Text style={{ fontFamily: 'PoppinsSemiBold', color: '#3a3a3a', fontSize: 18, marginLeft: 10, marginTop: 5 }}>Kontak</Text>
+                                </TouchableOpacity>
+                            </View>
+                            <View style={styles.contact}>
+                                <Icon name="logo-instagram" size={30} />
+                                <Text onPress={() => Linking.openURL('https://www.instagram.com/afrizalfajar_/')} style={{ fontFamily: 'PoppinsReg', marginLeft: 10 }}>Instagram</Text>
+                            </View>
+                            <View style={styles.contact}>
+                                <Icon2 name="behance" size={25} />
+                                <Text onPress={() => Linking.openURL('https://www.behance.net/afrizalfaj894a')} style={{ fontFamily: 'PoppinsReg', marginLeft: 10 }}>Behance</Text>
+                            </View>
+                            <View style={styles.contact}>
+                                <Icon name="ios-mail" size={30} />
+                                <Text style={{ fontFamily: 'PoppinsReg', marginLeft: 10 }}>afrizalfajar14@gmail.com</Text>
+                            </View>
+                        </View>
+                    </View>
+                </Modal>
+                {/* april */}
+                <Modal
+                    animationType='slide'
+                    transparent
+                    visible={this.state.april}
+                    onRequestClose={() => { this.setState({ april: !this.state.april }); }}>
+                    <View style={{ flex: 1, backgroundColor: 'rgba(0, 0, 0, 0.6)', justifyContent: 'center' }}>
+                        <View style={{ width: '90%', height: 420, backgroundColor: '#FFF', alignSelf: 'center', paddingVertical: 20 }}>
+                            <View>
+                                <TouchableOpacity style={{ paddingHorizontal: 20, flexDirection: 'row', alignItems: 'center', marginBottom: 10 }} onPress={this._april}>
+                                    <Icon color={'#EB5757'} size={40} name="ios-arrow-round-back" />
+                                    <Text style={{ fontFamily: 'PoppinsSemiBold', color: '#3a3a3a', fontSize: 18, marginLeft: 10, marginTop: 5 }}>Kontak</Text>
+                                </TouchableOpacity>
+                            </View>
+                            <View style={styles.contact}>
+                                <Icon name="logo-instagram" size={30} />
+                                <Text onPress={() => Linking.openURL('https://www.instagram.com/apriliyaard04/')} style={{ fontFamily: 'PoppinsReg', marginLeft: 10 }}>Instagram</Text>
+                            </View>
+                            <View style={styles.contact}>
+                                <Icon name="logo-facebook" size={30} />
+                                <Text onPress={() => Linking.openURL('https://facebook.com/apriliyaard/')} style={{ fontFamily: 'PoppinsReg', marginLeft: 10 }}>Facebook</Text>
+                            </View>
+                            <View style={styles.contact}>
+                                <Icon name="logo-dribbble" size={30} />
+                                <Text onPress={() => Linking.openURL('https://dribbble.com/aprilah')} style={{ fontFamily: 'PoppinsReg', marginLeft: 10 }}>Dribbble</Text>
+                            </View>
+                            <View style={styles.contact}>
+                                <Icon name="logo-github" size={30} />
+                                <Text onPress={() => Linking.openURL('https://github.com/ApriliyaArdiyanto')} style={{ fontFamily: 'PoppinsReg', marginLeft: 10 }}>Github</Text>
+                            </View>
+                            <View style={styles.contact}>
+                                <Icon2 name="behance" size={25} />
+                                <Text onPress={() => Linking.openURL('https://www.behance.net/aprlrpl44dd7f')} style={{ fontFamily: 'PoppinsReg', marginLeft: 10 }}>Behance</Text>
+                            </View>
+                            <View style={styles.contact}>
+                                <Icon name="ios-mail" size={30} />
+                                <Text style={{ fontFamily: 'PoppinsReg', marginLeft: 10 }}>aprlrpl44@gmail.com</Text>
+                            </View>
+                        </View>
+                    </View>
+                </Modal>
+                {/* aqil */}
+                <Modal
+                    animationType='slide'
+                    transparent
+                    visible={this.state.aqil}
+                    onRequestClose={() => { this.setState({ aqil: !this.state.aqil }); }}>
+                    <View style={{ flex: 1, backgroundColor: 'rgba(0, 0, 0, 0.6)', justifyContent: 'center' }}>
+                        <View style={{ width: '90%', height: 420, backgroundColor: '#FFF', alignSelf: 'center', paddingVertical: 20 }}>
+                            <View>
+                                <TouchableOpacity style={{ paddingHorizontal: 20, flexDirection: 'row', alignItems: 'center', marginBottom: 10 }} onPress={this._aqil}>
+                                    <Icon color={'#EB5757'} size={40} name="ios-arrow-round-back" />
+                                    <Text style={{ fontFamily: 'PoppinsSemiBold', color: '#3a3a3a', fontSize: 18, marginLeft: 10, marginTop: 5 }}>Kontak</Text>
+                                </TouchableOpacity>
+                            </View>
+                            <View style={styles.contact}>
+                                <Icon name="logo-instagram" size={30} />
+                                <Text onPress={() => Linking.openURL('https://www.instagram.com/aqiljf_/')} style={{ fontFamily: 'PoppinsReg', marginLeft: 10 }}>Instagram</Text>
+                            </View>
+                            <View style={styles.contact}>
+                                <Icon name="logo-github" size={30} />
+                                <Text onPress={() => Linking.openURL('https://github.com/awaqo')} style={{ fontFamily: 'PoppinsReg', marginLeft: 10 }}>Github</Text>
+                            </View>
+                            <View style={styles.contact}>
+                                <Icon name="logo-linkedin" size={30} />
+                                <Text onPress={() => Linking.openURL('https://www.linkedin.com/in/awaqo-/')} style={{ fontFamily: 'PoppinsReg', marginLeft: 10 }}>LinkedIn</Text>
+                            </View>
+                            <View style={styles.contact}>
+                                <Icon name="logo-facebook" size={30} />
+                                <Text onPress={() => Linking.openURL('https://facebook.com/awaqo/')} style={{ fontFamily: 'PoppinsReg', marginLeft: 10 }}>Facebook</Text>
+                            </View>
+                            <View style={styles.contact}>
+                                <Icon name="logo-dribbble" size={30} />
+                                <Text onPress={() => Linking.openURL('https://dribbble.com/awaqo')} style={{ fontFamily: 'PoppinsReg', marginLeft: 10 }}>Dribbble</Text>
+                            </View>
+                            <View style={styles.contact}>
+                                <Icon2 name="behance" size={25} />
+                                <Text onPress={() => Linking.openURL('https://www.behance.net/aqiljawada603b')} style={{ fontFamily: 'PoppinsReg', marginLeft: 10 }}>Behance</Text>
+                            </View>
+                            <View style={styles.contact}>
+                                <Icon name="ios-mail" size={30} />
+                                <Text style={{ fontFamily: 'PoppinsReg', marginLeft: 10 }}>aqiljawadalfurqon@gmail.com</Text>
+                            </View>
+                        </View>
+                    </View>
+                </Modal>
+                {/* bariq */}
+                <Modal
+                    animationType='slide'
+                    transparent
+                    visible={this.state.baroq}
+                    onRequestClose={() => { this.setState({ baroq: !this.state.baroq }); }}>
+                    <View style={{ flex: 1, backgroundColor: 'rgba(0, 0, 0, 0.6)', justifyContent: 'center' }}>
+                        <View style={{ width: '90%', height: 420, backgroundColor: '#FFF', alignSelf: 'center', paddingVertical: 20 }}>
+                            <View>
+                                <TouchableOpacity style={{ paddingHorizontal: 20, flexDirection: 'row', alignItems: 'center', marginBottom: 10 }} onPress={this._baroq}>
+                                    <Icon color={'#EB5757'} size={40} name="ios-arrow-round-back" />
+                                    <Text style={{ fontFamily: 'PoppinsSemiBold', color: '#3a3a3a', fontSize: 18, marginLeft: 10, marginTop: 5 }}>Kontak</Text>
+                                </TouchableOpacity>
+                            </View>
+                            <View style={styles.contact}>
+                                <Icon name="logo-instagram" size={30} />
+                                <Text onPress={() => Linking.openURL('https://www.instagram.com/alfariz.barq/')} style={{ fontFamily: 'PoppinsReg', marginLeft: 10 }}>Instagram</Text>
+                            </View>
+                            <View style={styles.contact}>
+                                <Icon name="logo-linkedin" size={30} />
+                                <Text onPress={() => Linking.openURL('https://www.linkedin.com/in/bariqalfariz/')} style={{ fontFamily: 'PoppinsReg', marginLeft: 10 }}>LinkedIn</Text>
+                            </View>
+                            <View style={styles.contact}>
+                                <Icon name="logo-github" size={30} />
+                                <Text onPress={() => Linking.openURL('https://github.com/bariqalfariz')} style={{ fontFamily: 'PoppinsReg', marginLeft: 10 }}>Github</Text>
+                            </View>
+                            <View style={styles.contact}>
+                                <Icon name="logo-dribbble" size={30} />
+                                <Text onPress={() => Linking.openURL('https://dribbble.com/bariqalfariz')} style={{ fontFamily: 'PoppinsReg', marginLeft: 10 }}>Dribbble</Text>
+                            </View>
+                            <View style={styles.contact}>
+                                <Icon2 name="behance" size={25} />
+                                <Text onPress={() => Linking.openURL('https://www.behance.net/bariqalfarfc9d')} style={{ fontFamily: 'PoppinsReg', marginLeft: 10 }}>Behance</Text>
+                            </View>
+                            <View style={styles.contact}>
+                                <Icon name="ios-mail" size={30} />
+                                <Text style={{ fontFamily: 'PoppinsReg', marginLeft: 10 }}>bariqalfariz09@gmail.com</Text>
                             </View>
                         </View>
                     </View>
                 </Modal>
                 {/* end */}
+
                 <View style={styles.content}>
                     <View style={styles.textbola}>
                         <Text style={{ fontFamily: 'PoppinsReg', color: '#3a3a3a' }}>Bola Kecil adalah aplikasi e-book yang berisi tentang materi-materi olahraga seputar bola kecil.</Text>
@@ -108,7 +258,7 @@ export default class Tentang extends React.Component {
                             <Image style={styles.foto} source={afrizal} />
                         </View>
                         <View style={styles.textcont}>
-                            <Text style={styles.nama}>Afrizal Fajar Barokah</Text>
+                            <Text style={styles.nama} onPress={this._afrizal}>Afrizal Fajar Barokah</Text>
                             <Text style={styles.tugas}>Content Writer</Text>
                         </View>
                     </View>
@@ -117,7 +267,7 @@ export default class Tentang extends React.Component {
                             <Image style={styles.foto} source={april} />
                         </View>
                         <View style={styles.textcont}>
-                            <Text style={styles.nama}>Apriliya Ardiyanto</Text>
+                            <Text style={styles.nama} onPress={this._april}>Apriliya Ardiyanto</Text>
                             <Text style={styles.tugas}>Content Writer</Text>
                         </View>
                     </View>
@@ -126,7 +276,7 @@ export default class Tentang extends React.Component {
                             <Image style={styles.foto} source={aqil} />
                         </View>
                         <View style={styles.textcont}>
-                            <Text style={styles.nama}>Aqil Jawadal Furqon</Text>
+                            <Text style={styles.nama} onPress={this._aqil}>Aqil Jawadal Furqon</Text>
                             <Text style={styles.tugas}>Developer</Text>
                         </View>
                     </View>
@@ -135,7 +285,7 @@ export default class Tentang extends React.Component {
                             <Image style={styles.foto} source={baroq} />
                         </View>
                         <View style={styles.textcont}>
-                            <Text style={styles.nama}>Bariq Alfariz Arunha</Text>
+                            <Text style={styles.nama} onPress={this._baroq}>Bariq Alfariz Arunha</Text>
                             <Text style={styles.tugas}>UI/UX Designer</Text>
                         </View>
                     </View>
@@ -173,7 +323,14 @@ const styles = StyleSheet.create({
         color: '#EB5757'
     },
     textbola: {
-        marginBottom: 25
+        marginBottom: 25,
+        marginTop: 10
+    },
+    contact: {
+        paddingHorizontal: 20,
+        flexDirection: 'row',
+        alignItems: 'center',
+        marginBottom: 10
     },
     rect1: {
         position: 'absolute',

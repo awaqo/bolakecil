@@ -122,7 +122,9 @@ const styles = StyleSheet.create({
         height: 200,
         backgroundColor: '#EB5757',
         paddingHorizontal: 20,
-        justifyContent: 'center'
+        justifyContent: 'center',
+        borderBottomLeftRadius: 10,
+        borderBottomRightRadius: 10
     },
     rect1: {
         position: 'absolute',
