@@ -3,8 +3,9 @@ export default {
     titleSejarah: "A. Sejarah",
     titleTeknikBermain: "B. Teknik Bermain",
     titleCaraBermain: "C. Cara Bermain",
+    titleLapangan: "D. Lapangan",
 
-    // Materi Softball
+    // Materi Softball start
     softballSejarah: "Softball adalah adalah satu jenis permainan olah raga yang dimainkan secara beregu yang terdiri atas 2 tim. Masing-masing tim berjumlah 9 orang dan dipimpin oleh satu kapten. Softball merupakan perkembangan dari olahraga sejenis, yakni baseball (bisbol) atau hardball. \n\nPermainan softball berasal dari Amerika Serikat dan diciptakan oleh George Hancock pada tahun 1887 di kota Chicago. Diameter bola softball adalah 28-30,5 cm. Dalam permainan softball, terdapat sebuah regu yang berjaga (defense) dan tim yang memukul (offense). \n\nCara memainkannya adalah bola tersebut dilempar oleh seorang pelempar bola (pitcher) dan menjadi sasaran pemain lawan yang memukul (batter) dengan menggunakan tongkat pemukul (bat). Tiap tim berlomba untuk mengumpulkan angka atau run dengan cara memutari tiga seri marka (base) pelari sampai menyentuh marka yang terakhir yang disebut dengan home plate. \n\nTim atau regu yang berhasil mencetak angka atau run terbanyak dalam inning yang telah ditentukan adalah pemenangnya. Durasi atau lamanya permainan softball adalah 7 inning atau selama waktu 2 jam. Permainan softball minimal membutuhkan satu sampai tujuh.",
     sub1softbalTB: "    1. Teknik Melempar Bola",
     sub1softbalTB1: "a  ) Lemparan Atas (Overhand Throw)",
@@ -36,47 +37,46 @@ export default {
     sub4softbalTB5: "b) Pukulan Tumbuk(bunt)",
     content4softbalTB5: "Pengertian pukulan tumbuk adalah memukul bola tanpa harus mengayunkan pemukul tetapi cukup menahan arah datangnya bola sehingga bola akan jatuh dekat dengan si pemukul. Pada waktu pukulan tumbuk atau bunt, sikap kedua kaki cukup dengan posisi kaki disejajarkan dengan arah datangnya bola.",
 
-    sub5softbalTB: "Lapangan",
+    // materi softball end
 
-    // Materi Tenis Lapangan
+    // Materi Tenis Lapangan start
     tenislapanganSejarah: "Permainan tenis lapangan diadakan dari tahun 1877 sampai sekarang dan terdapat pada kota london sehingga tahun 1988 olahraga ini menjadi sebuah ajang olimpiade di Seoul. \n\nHingga akhirnya Tenis lapangan ini menjadi olahraga yang Internasional yang dapat memecahkan situasi perlombahan dalam ajang olahraga mulai sehingga dapat berkembang menjadi salah satu permainan klub internasional.",
-    sub1tenislapanganTB1: "  1. Teknik Memegang Raket",
+    sub1tenislapanganTB: "  1. Teknik Memegang Raket",
     sub1tenislapanganTBContent1: "• Forehand eastern\n• Continental\n•  Western",
     sub2tenislapanganTB2: " 2. Teknik Menerima Service",
-    sub2tenislapanganTBContent2 : "• Memegang raket dei depan badan salah satu tangan\n • Tangan yang lain memegang leher raket\n• Raket setinggi bahu\n• Badan agak membungkuk\n• \n• Berduru dengan kaki agak terbuka\n• Berat badan agak terdorong ke depan\n • Pandangan melihat net\n ",
+    sub2tenislapanganTBContent2 : "• Memegang raket di depan badan salah satu tangan\n• Tangan yang lain memegang leher raket\n• Raket setinggi bahu\n• Badan agak membungkuk\n• Berdiri dengan kaki agak terbuka\n• Berat badan agak terdorong ke depan\n• Pandangan melihat net",
     sub3tenislapanganTB3: " 3. Teknik pukulan ",
-    sub3tenislapanganTB3Content3 : "• Forehand\n• Backhand\n",
-    TeknikPukulan: " Didalam teknik pulukan dapat dibagi beberapa bagian diantara nya: ",
-    PukulanChop : "A. Pukulan Chop",
-    PukulanChopContent : " • Pegang raket, putar badan ke samping kiri\n• Tarik raket ke samping kanan\n• Perkenaan bola pada posisi di samping badan\n• Gerakan mengikuti arah pukulan ke depan ",
-    ForehandDrive: "B. Forehand Drive",
-    ForehandDriveContent: " • Tangan memegang raket\n• Raket diayun dari belakang\n• Perkenaan bola, di samping pinggang\n• Gerakan lanjutan dilakukan dengan lengan lurus ke depan ",
-    BackhandDrive : "C. Backhand Drive" ,
-    BackhandDriveContent: " • Tangan memegang raket\n• Tangan diputar ke dalam (kiri)\n• Perkenaan bola tepat di samping kiri pinggang\n• Gerakan lanjutan ke arah depan ",
-    PukulanVoli : " D. Pukulan Voli",
-    PukulanVoliContent : " • Pukulan voli dilakukan sebelum bola memantul ke lapangan\n• Berat badan di kaki belakang\n• Kaki belakang dilangkahkan ke arah depan pada saat bola dan tangan diluruskan\n• Pukulan tidak keras ",
-    Servis  : " E. Servis",
-    ServisContent   : " • Pegang raket dengan cara kontinental\n• Berat badan ke depan saat bola dilambungkan\n• Bola dilambungkan ke sebelah kanan badan\n• Lutut ditekuk\n• Memukul bola dengan posisi tangan lurus\n• Kaki belakang pindah ke depan\n• Badan menjaga keseimbangan ",
-    PukulanOverheadSmash : "F. Pukulan Overhead Smash",
-    PukulanOverheadSmashContent : " • Pukulan smash harus dilatih secara rutin, untuk membiasakan pukulan secara keras sehingga dapat mematikan lawan\n• Pegang raket kemudian angkat raket ke atas\n• Kaki kanan di belakang\n• Perkenaan bola tepat di atas kepala\n• Gerakan lanjutan diarahkan ke bawah ",
-    PukulanLob : " G. Pukulan Lob",
-    PukulanLobContent : " • Pegang raket, dan kemudian tarik ke belakang\n• Perkenaan bola dilakukan secara rileks\n• Gerakan lanjutan ke arah depan ",
-    sub4tenislapanganTB4 : " Cara Bermain",
+    sub3tenislapanganTB3Content3 : "• Forehand\n• Backhand",
+    TeknikPukulan: "Didalam teknik pukulan dapat dibagi beberapa bagian diantara nya:\n ",
+    PukulanChop : "a) Pukulan Chop",
+    PukulanChopContent : "• Pegang raket, putar badan ke samping kiri\n• Tarik raket ke samping kanan\n• Perkenaan bola pada posisi di samping badan\n• Gerakan mengikuti arah pukulan ke depan\n ",
+    ForehandDrive: "b) Forehand Drive",
+    ForehandDriveContent: "• Tangan memegang raket\n• Raket diayun dari belakang\n• Perkenaan bola, di samping pinggang\n• Gerakan lanjutan dilakukan dengan lengan lurus ke depan\n ",
+    BackhandDrive : "c) Backhand Drive" ,
+    BackhandDriveContent: "• Tangan memegang raket\n• Tangan diputar ke dalam (kiri)\n• Perkenaan bola tepat di samping kiri pinggang\n• Gerakan lanjutan ke arah depan\n ",
+    PukulanVoli : "d) Pukulan Voli",
+    PukulanVoliContent : "• Pukulan voli dilakukan sebelum bola memantul ke lapangan\n• Berat badan di kaki belakang\n• Kaki belakang dilangkahkan ke arah depan pada saat bola dan tangan diluruskan\n• Pukulan tidak keras\n ",
+    Servis  : "e) Servis",
+    ServisContent   : "• Pegang raket dengan cara kontinental\n• Berat badan ke depan saat bola dilambungkan\n• Bola dilambungkan ke sebelah kanan badan\n• Lutut ditekuk\n• Memukul bola dengan posisi tangan lurus\n• Kaki belakang pindah ke depan\n• Badan menjaga keseimbangan\n ",
+    PukulanOverheadSmash : "f) Pukulan Overhead Smash",
+    PukulanOverheadSmashContent : "• Pukulan smash harus dilatih secara rutin, untuk membiasakan pukulan secara keras sehingga dapat mematikan lawan\n• Pegang raket kemudian angkat raket ke atas\n• Kaki kanan di belakang\n• Perkenaan bola tepat di atas kepala\n• Gerakan lanjutan diarahkan ke bawah\n ",
+    PukulanLob : "g) Pukulan Melambung(Lob)",
+    PukulanLobContent : "• Pegang raket, dan kemudian tarik ke belakang\n• Perkenaan bola dilakukan secara rileks\n• Gerakan lanjutan ke arah depan ",
+    // sub4tenislapanganTB4 : "Cara Bermain",
     sub4tenislapanganTB4content4: " Lapangan Tenis Lapangan",
-    LapanganTenisLapangan: "A. Memiliki lapangan yang berbentuk :",
+    LapanganTenisLapangan: "1) Memiliki lapangan yang berbentuk :",
     LapanganTenisLapanganContent: "• Ukuran panjang mencapai 23,77 m\n• Ukuran lebar mencapai 8,23 m\n• Ukuran untuk tunggal (single)\n• Ukuran panjang 23,77 m\n• Ukuran lebar 10,97 m (ganda)",
-    Raket: "B. Raket",
-    RaketContent : " • Menggunakan raket yang ringan 1,5 ons–12,62 ons\n• Sedang 12,62 ons–14,5 ons\n• Berat 14,5 ons–15 ons",
-    Bola: "C. Bola",
+    Raket: "2) Raket",
+    RaketContent : "• Menggunakan raket yang ringan 1,5 ons–12,62 ons\n• Sedang 12,62 ons–14,5 ons\n• Berat 14,5 ons–15 ons",
+    Bola: "3) Bola",
     BolaContent: "• Memiliki garis tengah dengan ukuran 63,50 mm–66,67 mm\n• Memiliki beratnya dengan ukuran 56,70 gr–58,48 gr. ",
-    Pakaian: " D. Pakaian",
+    Pakaian: "4) Pakaian",
     PakaianContent: "• Menggunakan seragam dan atribut yang lengkap",
-    Net : "E. Net (Jaring) ",
-    NetContent: " • Dengan ketiggian mencapai 910 mm dari tanah\n• Di buat dengan anyaman tali nilon ",
+    Net : "5) Net (Jaring) ",
+    NetContent: "• Dengan ketiggian mencapai 910 mm dari tanah\n• Di buat dengan anyaman tali nilon ",
+    // materi tenis lapangan end
 
-    
-    // detail materi Bulutangkis
-    
+    // materi Bulutangkis start
     bulutangkisSejarah: "Olah raga kompetitif bulu tangkis diciptakan oleh petugas Tentara Britania di Pune, India abad ke-19 saat mereka menambahkan jaring dan memainkannya dan secara bersaingan. Oleh sebab itu kota Pune dikenal sebelumnya sebagai Poona, permainan itu juga dikenali sebagai Poona pada masa itu. \n\nPara tentara itu membawa permainan itu kembali ke Inggris pada tahun 1850-an. Olah raga ini mendapatkan namanya yang sekarang pada 1860 pada sebuah pamflet oleh Isaac Spratt, seorang penyalur mainan Inggris. Ini melukiskan permainan itu dimainkan di Gedung Badminton (Badminton House), estat Duke of Beaufort’s di Gloucestershire, Inggris. \n\nRancangan peraturan pertama kali ditulis oleh Klub Badminton Bath tahun 1877. Asosiasi bulu tangkis Inggris di bentuk pada tahun 1893 dan kejuaraan internasional pertamanya pertama kali pada tahun 1899 dengan Kejuaraan All England. \n\nBulu tangkis menjadi olah raga populer di dunia, terutama di wilayah Asia Timur dan Tenggara, yang kini mendominasi olah raga ini, dan di negara-negara Skandinavia.",
     
     sub1TeknikBermain: "    1. Teknik Dasar Badminton",
@@ -102,60 +102,63 @@ export default {
     lobContent1: "1.) Underhand lob: Pukulan lob yang dilakukan dari bawah. caranya dengan memukul shuttlecock yang berada di bawah badan dan dilambungkan tinggi ke bagian belakang.\n",
     lobContent2: "2.) Overhead lob: Pukulan lob ini dilakukan dengan cara dari atas kepala untuk menerbangkan shuttlecock melambung ke bagian belakang.",
 
-    titleCaraBermain: "C. Cara Bermain",
-    sub1CaraBermain: "      Lapangan",
     content1CB: "Memiliki lebar lapangan 6,10 meter untuk pertandingan ganda dan ukuran 5,18 m jika digunakan untuk partai tunggal. Garis-garis yang ada mempunyai ketebalan 40 mm dan warnanya harus kontras pada warna lapangan. \nUkuran net sama untuk tunggal dan ganda :",
     tinggi: "• Tinggi 1,55 meter",
     panjang: "• Panjang 6,10 meter",
     lebar: "• Lebar 0,67 meter", 
+    // materi bulutangkis end
 
-    // Materi Kasti
-
-
-    // Materi Tenis Meja
-    sejarahtenismeja : "Tenis meja mulai populer pada abad ke 19 di Inggris dengan nama pingpong, gossima dan whiff whoff. Lalu, tenis meja berganti nama menjadi table tennis atau tenis meja dalam bahasa indonesia. Permainan yang satu ini mulai dikenal pada tahun 1901 saat diadakannya turnamen, buku yang menuliskan tentang tenis meja, dan kejuaraan tidak resmi yaitu tahun 1902 \n\n Awalnya permainan tenis meja dilarang di Rusia pada tahun 1900. Permainan ini di larang karena penguasa pada masa itu percaya bahwa memainkan tenis meja memiliki dampak negatif pada penglihatan pemain. \n\n Pada tahun 1921, Asosiasi Tenis Meja/Table Tennis Association(TTA) dibuat di Inggris. Pada tahun 1926, Asosiasi Tenis Meja ini diikuti oleh Federasi Tenis Meja Internasional/International Table Tennis Federation(ITTF) . Kota yang menjadi tuan rumah di kejuaraan dunia resmi pertama tahun 1926 yaitu kota London. Selain itu, Asosiai Tenis Meja Amerika dibentuk tahun 1933. \n\n Tahun 1930, Edgar Snow berkomentar di Red Star Over China. Edgar Snow berkomentar bahwa pihak komunis mempunyai “hasrat untuk tenis meja asal Inggris” yang menurutnya “ganjil”. ",
-    sub1TeknikBermain : " 1. Teknik Dasar Tenis Meja",
+    // Materi Tenis Meja start
+    sejarahtenismeja : "Tenis meja mulai populer pada abad ke 19 di Inggris dengan nama pingpong, gossima dan whiff whoff. Lalu, tenis meja berganti nama menjadi table tennis atau tenis meja dalam bahasa indonesia. Permainan yang satu ini mulai dikenal pada tahun 1901 saat diadakannya turnamen, buku yang menuliskan tentang tenis meja, dan kejuaraan tidak resmi yaitu tahun 1902 \n\nAwalnya permainan tenis meja dilarang di Rusia pada tahun 1900. Permainan ini di larang karena penguasa pada masa itu percaya bahwa memainkan tenis meja memiliki dampak negatif pada penglihatan pemain. \n\nPada tahun 1921, Asosiasi Tenis Meja/Table Tennis Association(TTA) dibuat di Inggris. Pada tahun 1926, Asosiasi Tenis Meja ini diikuti oleh Federasi Tenis Meja Internasional/International Table Tennis Federation(ITTF) . Kota yang menjadi tuan rumah di kejuaraan dunia resmi pertama tahun 1926 yaitu kota London. Selain itu, Asosiai Tenis Meja Amerika dibentuk tahun 1933. \n\nTahun 1930, Edgar Snow berkomentar di Red Star Over China. Edgar Snow berkomentar bahwa pihak komunis mempunyai “hasrat untuk tenis meja asal Inggris” yang menurutnya “ganjil”. ",
+    sub1TeknikBermain : "   1. Teknik Dasar Tenis Meja",
     content1TM : "Teknik dasar memegang bet dalam permainan tenis meja adalah sebagai berikut.",
     sub1TM1 : "a. shakehand grip",
     sub1TM1content1 : "Teknik memegang bet mirip seperti berjabat tangan, teknik yang satu ini banyak dipakai para pemain professional sebab teknik ini populer di negara-negara Eropa. Melalui cara ini, seorang pemain bisa memakai kedua sisi bet.",
     sub1TM2 : "b. Penhold grip",
     sub1TM2content2 : " Teknik memegang bet mirip seperti memegang pena. Teknik ini disebut juga dengan Asia grip, meskipun banyak pemain Asia memakai teknik shakehand grip. Pada pegangan ini hanya satu sisi bet yang bisa dipakai.",
     sub1TM3 : "c. Teknik Seemiller grip",
-    Sub1TM3content3 : " teknik ini juga banyak dipakai kalangan professional dalam tenis meja. Teknik yang satu ini disebut juga teknik American grip. Teknik seemiller grip adalah versi dari Shakehand grip. Teknik seemiller grip mempunyai kesamaan dengan shakehand grip pada bagian cara memegangnya. Perbedaannya yaitu bet bagian atas diputar dari 20-90 dejarat ke arah tubuh. Posisi jari telunjuk menempel di sepanjang sisi bet.",
+    sub1TM3content3 : " teknik ini juga banyak dipakai kalangan professional dalam tenis meja. Teknik yang satu ini disebut juga teknik American grip. Teknik seemiller grip adalah versi dari Shakehand grip. Teknik seemiller grip mempunyai kesamaan dengan shakehand grip pada bagian cara memegangnya. Perbedaannya yaitu bet bagian atas diputar dari 20-90 dejarat ke arah tubuh. Posisi jari telunjuk menempel di sepanjang sisi bet.",
     
-    sub2TeknikBermain : " 2. Teknik Pukulan Tenis Meja",
-    sub2TM1 : " 1. Pukulan Backhand dan Forehand",
-    sub2TM1content1 : " Melakukan Pukulan Backhand dan Forehand",
-    sub2TM1subcontent1 : " 1. Bola dilambungkan ke arah teman. \n\n 2. Dilakukan berpasangan atau kelompok. \n\n 3. Yang melakukan pukulan bergerak berpindah tempat dengan segera. ",
-    sub2TM2content2 : " Melakukan pukulan Backhand dan Forehand menyilang meja",
-    sub2TM2subcontent2 : " 1. Bola dilambungkan oleh teman dan dipantulkan ke arah meja dengan pukula service. \n\n 2. Dilakukan berpasangan. \n\n 3. Yang melambungkan pukulan backhand dan forehand bergerak berpindah. ",
+    sub2TeknikBermain : "   2. Teknik Pukulan Tenis Meja",
+    sub2TM1 : "a. Pukulan Backhand dan Forehand",
+    sub2TM1content1 : "1) Melakukan Pukulan Backhand dan Forehand",
+    sub2TM1subcontent1 : "• Bola dilambungkan ke arah teman. \n• Dilakukan berpasangan atau kelompok. \n• Yang melakukan pukulan bergerak berpindah tempat dengan segera.\n ",
+    sub2TM2content2 : "2) Melakukan pukulan Backhand dan Forehand menyilang meja",
+    sub2TM2subcontent2 : "• Bola dilambungkan oleh teman dan dipantulkan ke arah meja dengan pukula service. \n• Dilakukan berpasangan. \n• Yang melambungkan pukulan backhand dan forehand bergerak berpindah.\n ",
 
-    sub3Servis : " 3. Servis",
-    sub3TM1 : " a. Servis Forehand dan Backhand Lurus Bidang Servis. ",
-    sub3TM1content1 : "1. Dilakukan berpasangan, \n\n 2.Yang melakukan pukulan servis bergerak berpindah tempat. ",
-    sub3TM2 : "b. Servis Forehand dan Backhand Secara Menyilang",
-    sub3TM2content2 : " 1. Dilakukan secara berpasangan. \n\n 2.Yang sudah melakukan pukulan servis berpindah tempat.",
-    sub3TM3 : "c. Servis Forehand dan Backhand ke Sasaran",
-    sub3TM3content3 : " 1. Dilakukan berpasangan. \n\n 2. Yang sudah melakukan pukulan servis bergerak segera berpindah tempat.",
+    sub3Servis : "b. Servis",
+    sub3TM1 : "1) Servis Forehand dan Backhand Lurus Bidang Servis. ",
+    sub3TM1content1 : "• Dilakukan berpasangan, \n• Yang melakukan pukulan servis bergerak berpindah tempat.\n ",
+    sub3TM2 : "2) Servis Forehand dan Backhand Secara Menyilang",
+    sub3TM2content2 : "• Dilakukan secara berpasangan. \n• Yang sudah melakukan pukulan servis berpindah tempat.\n",
+    sub3TM3 : "3) Servis Forehand dan Backhand ke Sasaran",
+    sub3TM3content3 : "• Dilakukan berpasangan. \n• Yang sudah melakukan pukulan servis bergerak segera berpindah tempat.\n",
 
-    sub4Smash : " 4. Smash",
-    sub4TM1 : " a. Smash Forehand",
-    sub4TM1content1 : " 1. Posisikan kaki kiri tepat berada di depan, dan kaki kanan di belakang. Badan sedikit dimiringkan ke arah kanan hingga berat badan bertumpu pada kaki kanan.\n\n 2. Tarik lengkan kebelakang, pinggang sedikit dimiringkan ke arah kanan. \n\n 3. Setelah bola memantul dan mencapai titik , mulai ayunkan lengan dari bawah ke atas dan pukul bola ke bawah dengan bantuan pergelangan tangan. ",
-    sub4TM2 : " b. Smash Backhand", 
-    sub4TM2content2 : " 1. Posisikan kaki kanan ada di depan, kaki kiri di belakang. Badan sedikit dimiringkan ke arah kiri sampai pundak kanan menghadap meja. \n\n 2. Tarik lengan bawah ke arah kiri, ke belakang dan lebih tinggi dari meja. \n\n 3. Setelah bola memantul dan mencapai titik atas, ayunkan lengan bawah ke depan arah kanan dan pukul bola. \n\n 4.Pergelangan tangan bisa membantu menekan bola dan mengatur arah, serta berat badan berpindah dari kiri ke kanan.",
+    sub4Smash : "c. Smash",
+    sub4TM1 : "1) Smash Forehand",
+    sub4TM1content1 : "• Posisikan kaki kiri tepat berada di depan, dan kaki kanan di belakang. Badan sedikit dimiringkan ke arah kanan hingga berat badan bertumpu pada kaki kanan.\n• Tarik lengkan kebelakang, pinggang sedikit dimiringkan ke arah kanan. \n• Setelah bola memantul dan mencapai titik , mulai ayunkan lengan dari bawah ke atas dan pukul bola ke bawah dengan bantuan pergelangan tangan.\n ",
+    sub4TM2 : "2) Smash Backhand", 
+    sub4TM2content2 : "• Posisikan kaki kanan ada di depan, kaki kiri di belakang. Badan sedikit dimiringkan ke arah kiri sampai pundak kanan menghadap meja. \n• Tarik lengan bawah ke arah kiri, ke belakang dan lebih tinggi dari meja. \n• Setelah bola memantul dan mencapai titik atas, ayunkan lengan bawah ke depan arah kanan dan pukul bola. \n• Pergelangan tangan bisa membantu menekan bola dan mengatur arah, serta berat badan berpindah dari kiri ke kanan.",
 
-    sub5CaraBermain : " 5. Cara Bermain",
-    sub5TM1 : " Lapangan Tenis Meja",
-    sub5TM1content1 : " Untuk ukuran lapangan tenis meja yaitu : ",
-    Panjang : "• Panjang = 274 cm ",
-    Lebar   : "• Lebar = 152,5 cm",
-    Tinggimejadarilantailapangan : "• Tinggi Meja Dari Lantai Lapangan = 76 cm",
-    Tebalgarissisi : "• Tebal garis sisi = 2 cm. ",
-    Luas : "• Luas = 4,1785 meter persegi.",
-    sub5TM2 : " Tiang net dan jaring net",
-    sub5TM2content : " Untuk ukuran tiang net dan jaring net tenis meja yaitu : ",   
-    Panjangnet : "• Panjang net = 183 cm.",
-    Lebaratautingginet : "• Lebar atau tinggi net = 15,25 cm.",
-    Jarakmejaketiang : "• Jarak meja ke tiang = 15,25 cm.",
-    Luasnet : "• Luas net = 0,279075 meter persegi.",
+    sub5TM1: "1. Ukuran Lapangan",
+    sub5TM1content : "Untuk ukuran lapangan tenis meja yaitu :\n• Panjang = 274 cm\n• Lebar = 152,5 cm\n• Tinggi Meja Dari Lantai Lapangan = 76 cm\n• Tebal garis sisi = 2 cm.\n• Luas = 4,1785 meter persegi.\n ",
+    
+    sub5TM2 : "2. Tiang net dan jaring net",
+    sub5TM2content : "Untuk ukuran tiang net dan jaring net tenis meja yaitu :\n• Panjang net = 183 cm.\n• Lebar atau tinggi net = 15,25 cm.\n• Jarak meja ke tiang = 15,25 cm.\n• Luas net = 0,279075 meter persegi. ",   
+
+    // materi tenis meja end
+
+
+    // Materi Kasti start
+    materisejarah: "Dalam kehidupan dunia olah raga pasti masing-masing olah raga memiliki sejarah yang berbeda-beda permainan hal yang semacam ini bisa dikatakan lebih tua dari permainan olah raga yang lainnya sehingga permainan ini diambil dari salah satu referensi yang bersifat sastra adalah “bola” di di jaman kehidupan Pra Inggris Raya.\n\nHingga sekarang permainan ini sudah sampai ke tingkat Internasional sejak tahun 1744 permainan ini telah di little sebagai “Pocket-Book” oleh seorang penelitian John Newbery dan selanjutnya pada tahun 1828 memiliki beberapa arti dan aturan oleh Willam Clarake untuk mengesahkan permainan kasti sebagai The Boy.\n\nDan pada tahun berikutnya permainan ini diuat aturan nasional oleh Altletic Association Gaelic di sebuah negara yaitu Irlandia pada tahun 1884, Sehingga sampaisekarang ini permainan ini sudah banyak sekali peminatnya bahkan permainan ini sudah masuk ke tingkat internasional di ajang pertandingan bola kasti.",
+    judulteknikmelemparbola: "    1. Teknik Melempar Bola",
+    materiteknikbermain: "• Lemparan bola melambung\n• Melempar bola menyusur tanah\n• Melempar bola memantul tanah\n• Melempar bola mendatar",
+    judulteknikmenangkapbola: "    2. Teknik Menangkap Bola",
+    materiteknikmenangkapbola: "Setiap melakukan penangkapan bola yang ada di dalam permaian kasti dibagi menjadi empat bagian cara menagkapnya diantaranya adalah sebagai berikut :\n• Menangkap bola mendatar\n• Menangkap bola melambung\n• Menangkap bola menyusur Tanah\n• Menangkap bola memantul Tanah\n\nAdapun terdapat lagi beberapa cara untuk melakukan dari keempat teknik tersebut harus didasari dengan sikap seperti :\n• Pandangan mata harus tertuju ke arah datangnya bola\n• Menangkap bola harus menggunakan dengan kedua tangan sehingga membentuk seperti kuda-kuda\n• Pada waktu penangkapan bola telapak tangan harus terbuka",
+    judulmelambungkanbola: "    3. Teknik Melambungkan Bola",
+    materimelambungkanbola: "Teknik melambungkan bola kasti seringkali hal ini digunakan sebagai umpan yang bagus kepada pemukul :, Berikut terknik untuk melakukan lemparan bola melambung adalah sebagai berikut:, Sikap badan harus berdiri dengan posisi yang tegak, Disaat melempar kan bola tengan kanan dan posisi kaki kanan berada di depan., Disaat melemparkan bola posisi badan condongkan ke arah depan., Putar lengan tangan kira-kira 360°",
+    judulmemukukbola: "    4. Teknik Memukul Bola",
+    materimemukulbola: "Di dalam permainan bola kasti halyang harus kita pahami adalah cara melakukan pememukul bola, Berikut teknik untuk melakukan pemukulan bola kasti adalah :, Selalu pegang alat pemukul dengan posisi badan tegak lurus dan gemgam dengan menggunakan tangan kanan, Berdiri dengan sikap menyamping sehingga bola akan melambung, Buka bagian kedua kaki selebar bahu, Sikap badan dan pandangan harus fokus ke arah pelambung",
+    // materi kasti end
+
 };

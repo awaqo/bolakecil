@@ -237,11 +237,11 @@ export default class Tentang extends React.Component {
 
                 <View style={styles.content}>
                     <View style={styles.textbola}>
-                        <Text style={{ fontFamily: 'PoppinsReg', color: '#3a3a3a' }}>Bola Kecil adalah aplikasi e-book yang berisi tentang materi-materi olahraga seputar bola kecil.</Text>
+                        <Text style={{ fontFamily: 'PoppinsReg', color: '#3a3a3a' }}>Parva Pila adalah aplikasi e-book yang berisi tentang materi - materi olahraga seputar bola kecil.</Text>
                         <Text></Text>
-                        <Text style={{ fontFamily: 'PoppinsReg', color: '#3a3a3a' }}>Materi yang ada di dalam aplikasi bola kecil berbasis teks, gambar, dan video. Jadi, buat kalian yang ingin belajar teknik atau cara bermain namun kurang bisa memahami maksud dari teorinya, kalian bisa melihat gambar ataupun videonya.</Text>
+                        <Text style={{ fontFamily: 'PoppinsReg', color: '#3a3a3a' }}>Materi yang ada di dalam aplikasi Parva Pila berbasis teks, gambar, dan video. Jadi, untuk kalian yang ingin belajar teknik atau cara bermain namun kurang bisa memahami maksud dari teorinya, kalian bisa melihat gambar ataupun videonya.</Text>
                         <Text></Text>
-                        <Text style={{ fontFamily: 'PoppinsReg', color: '#3a3a3a' }}>Tak hanya materi, Aplikasi Bola Kecil juga dilengkapi dengan adanya fitur Latian Soal untuk menguji kemampuan pengguna.</Text>
+                        <Text style={{ fontFamily: 'PoppinsReg', color: '#3a3a3a' }}>Tak hanya materi, Aplikasi Parva Pila juga dilengkapi dengan adanya fitur Quiz dan Ujian untuk menguji kemampuan pengguna.</Text>
                     </View>
                     <Text style={{ fontFamily: 'PoppinsSemiBold', color: '#3a3a3a', marginBottom: 10, fontSize: 18}}>Anggota Tim</Text>
                     <View style={styles.person}>

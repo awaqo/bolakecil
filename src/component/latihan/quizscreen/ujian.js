@@ -125,7 +125,7 @@ export default class Ujian extends React.Component {
         >
           {this.state.completed === true && (
           <View style={{ alignItems: 'center', justifyContent: 'center' }}>
-            <Text style={{ fontSize: 25, fontFamily: 'PoppinsSemiBold' }}>Quiz Selesai</Text>
+            <Text style={{ fontSize: 25, fontFamily: 'PoppinsSemiBold' }}>Ujian Selesai</Text>
             <Text style={{ fontFamily: 'PoppinsReg', fontSize: 18 }}>Nilaimu</Text>
             <View style={{ width: 150, height: 90, alignItems: 'center', paddingLeft: 2, alignSelf: 'center' }}>
               <Text style={{ fontSize: 64, fontFamily: 'PoppinsSemiBold', flexShrink: 1, flexWrap: 'wrap' }}>{this.state.results.score / 3 * 2}</Text>

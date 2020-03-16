@@ -30,12 +30,6 @@ class SignIn extends React.Component {
         .then(() => {
           alert('Login berhasil. \nAnda masuk dengan data berikut : \nEmail : ' + this.state.email + '\nPassword : ' + this.state.password)
           Keyboard.dismiss()
-          const getEmail = this.state.email
-          const email = getEmail.split('@')
-          firebase.app().database().ref('users').child(`${email[0]}`).set({
-            name: this.state.name,
-            password: this.state.password
-          })
         })
         .catch(err => {
           this.setState({ error: err.message })

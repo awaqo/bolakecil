@@ -144,12 +144,12 @@ const styles = StyleSheet.create({
     },
     imgcont: {
         width: '95%',
-        height: 250,
-        alignSelf: 'center',
+        height: 350,
+        alignSelf: 'center'
     },
     imgs: {
         width: '100%',
-        height: '140%',
+        height: '100%',
         zIndex: -1,
         opacity: 0.5
     },
