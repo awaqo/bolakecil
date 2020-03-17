@@ -1,4 +1,4 @@
-package com.firebaselogin;
+package com.parvapila;
 
 import com.facebook.react.ReactActivity;
 

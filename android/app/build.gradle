@@ -128,11 +128,11 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.firebaselogin"
+        applicationId "com.parvapila"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 3
-        versionName "1.02"
+        versionCode 6
+        versionName "1.06"
     }
     signingConfigs {
         release {
